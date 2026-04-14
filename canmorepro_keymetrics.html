@@ -134,7 +134,7 @@
         <div class="chart-card">
             <div class="chart-header"><div class="chart-title">9. 미션 카테고리별 월별 완료 추이</div></div>
             <div class="chart-container"><canvas id="chart9"></canvas></div>
-            <div class="insight">💡 MANAGEMENT(증상관리)가 전체의 65.7%(567건)로 최다 — 증상 기록 연계 발생 구조 반영. INFORMATION(정보교육) 100% 완료율로 환자의 교육 콘텐츠 참여 적극적</div>
+            <div class="insight">💡 증상 관리가 전체의 65.7%(567건)로 최다 — 증상 기록 연계 발생 구조 반영. 유방암 정보 100% 완료율로 환자의 교육 콘텐츠 참여 적극적</div>
         </div>
         <!-- 10. G3 누적 환자 vs 임상 종료 누적 -->
         <div class="chart-card">
@@ -250,7 +250,7 @@
 
         <h3 style="font-size:1.05rem;color:var(--secondary);margin:24px 0 10px;padding:6px 12px;border-left:4px solid var(--accent);background:#F0F4F8;border-radius:0 6px 6px 0;">📱 미션 활용 패턴</h3>
         <ul class="summary-list">
-            <li><strong>월별 최대 93건(2025.10) 완료, 2025.08 이후 40건+ 안정 유지:</strong> 미션 완료율 99.1%(발생 기준)로 노출→완료 전환이 매우 높음. MANAGEMENT(증상관리) 65.7%·INFORMATION(정보교육) 18.2%·LIVING(생활지원) 16.2% 구성으로 증상 연계 실용 정보 소비가 주류</li>
+            <li><strong>월별 최대 93건(2025.10) 완료, 2025.08 이후 40건+ 안정 유지:</strong> 미션 완료율 99.1%(발생 기준)로 노출→완료 전환이 매우 높음. 증상 관리 65.7%·유방암 정보 18.2%·생활 정보 16.2% 구성으로 증상 연계 실용 정보 소비가 주류</li>
             <li><strong>오전(06~12시) 52.1%로 아침 루틴 정착:</strong> 증상 기록 → 미션 수행이 아침 시간대에 연동. 별도 독려 없이 자연스러운 앱 습관화 성공. 미션 완료 중위 소요시간 4.7분 — 부담 없는 짧은 교육 콘텐츠 소비 패턴 확인</li>
         </ul>
 
@@ -414,9 +414,9 @@ new Chart(document.getElementById('chart8'),{
 new Chart(document.getElementById('chart9'),{
     type:'bar',
     data:{labels,datasets:[
-        {label:'MANAGEMENT(증상관리)',data:data_mis_manage,backgroundColor:'#2E86DE',stack:'mis'},
-        {label:'INFORMATION(정보교육)',data:data_mis_info,backgroundColor:'#10AC84',stack:'mis'},
-        {label:'LIVING(생활지원)',data:data_mis_living,backgroundColor:'#F79F1F',stack:'mis'}
+        {label:'증상 관리',data:data_mis_manage,backgroundColor:'#2E86DE',stack:'mis'},
+        {label:'유방암 정보',data:data_mis_info,backgroundColor:'#10AC84',stack:'mis'},
+        {label:'생활 정보',data:data_mis_living,backgroundColor:'#F79F1F',stack:'mis'}
     ]},
     options:{...commonOptions,scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,grid:{color:'#E5E7EB'},beginAtZero:true}}}
 });
